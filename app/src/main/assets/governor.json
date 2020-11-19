@@ -1,0 +1,514 @@
+{
+  "governors": [
+    {
+      "id": 1,
+      "prefecture_id": 3,
+      "name": "達増 拓也",
+      "kana": "たっそ たくや",
+      "birth_day": "1964/06/10",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2019/09/10"
+    },
+    {
+      "id": 2,
+      "prefecture_id": 39,
+      "name": "尾﨑 正直",
+      "kana": "おざき まさなお",
+      "birth_day": "1967/09/14",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2019/12/06"
+    },
+    {
+      "id": 3,
+      "prefecture_id": 43,
+      "name": "蒲島 郁夫",
+      "kana": "かばしま いくお",
+      "birth_day": "1947/01/28",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2020/04/15"
+    },
+    {
+      "id": 4,
+      "prefecture_id": 46,
+      "name": "三反園 訓",
+      "kana": "みたぞの さとし",
+      "birth_day": "1958/02/13",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2020/07/27"
+    },
+    {
+      "id": 5,
+      "prefecture_id": 13,
+      "name": "小池 百合子",
+      "kana": "こいけ ゆりこ",
+      "birth_day": "1952/07/15",
+      "gender": 1,
+      "wins": 1,
+      "expiration": "2020/07/30"
+    },
+    {
+      "id": 6,
+      "prefecture_id": 16,
+      "name": "石井 隆一",
+      "kana": "いしい たかかず",
+      "birth_day": "1945/12/15",
+      "gender": 0,
+      "wins": 4,
+      "expiration": "2020/11/08"
+    },
+    {
+      "id": 7,
+      "prefecture_id": 33,
+      "name": "伊原木 隆太",
+      "kana": "いばらぎ りゅうた",
+      "birth_day": "1966/07/29",
+      "gender": 0,
+      "wins": 2,
+      "expiration": "2020/11/11"
+    },
+    {
+      "id": 8,
+      "prefecture_id": 9,
+      "name": "福田 富一",
+      "kana": "ふくだ とみかず",
+      "birth_day": "1953/05/21",
+      "gender": 0,
+      "wins": 4,
+      "expiration": "2020/12/08"
+    },
+    {
+      "id": 9,
+      "prefecture_id": 21,
+      "name": "古田 肇",
+      "kana": "ふるた はじめ",
+      "birth_day": "1947/09/13",
+      "gender": 0,
+      "wins": 4,
+      "expiration": "2021/02/05"
+    },
+    {
+      "id": 10,
+      "prefecture_id": 6,
+      "name": "吉村 美栄子",
+      "kana": "よしむら みえこ",
+      "birth_day": "1951/05/18",
+      "gender": 1,
+      "wins": 3,
+      "expiration": "2021/02/13"
+    },
+    {
+      "id": 11,
+      "prefecture_id": 12,
+      "name": "森田 健作",
+      "kana": "もりた けんさく",
+      "birth_day": "1949/12/16",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2021/04/04"
+    },
+    {
+      "id": 12,
+      "prefecture_id": 5,
+      "name": "佐竹 敬久",
+      "kana": "さたけ のりひさ",
+      "birth_day": "1947/11/15",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2021/04/19"
+    },
+    {
+      "id": 13,
+      "prefecture_id": 22,
+      "name": "川勝 平太",
+      "kana": "かわかつ へいた",
+      "birth_day": "1948/08/16",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2021/07/04"
+    },
+    {
+      "id": 14,
+      "prefecture_id": 28,
+      "name": "井戸 敏三",
+      "kana": "いど としぞう",
+      "birth_day": "1945/08/10",
+      "gender": 1,
+      "wins": 5,
+      "expiration": "2021/07/31"
+    },
+    {
+      "id": 15,
+      "prefecture_id": 8,
+      "name": "大井川 和彦",
+      "kana": "おおいがわ かずひこ",
+      "birth_day": "1964/04/03",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2021/09/25"
+    },
+    {
+      "id": 16,
+      "prefecture_id": 4,
+      "name": "村井 嘉浩",
+      "kana": "むらい よしひろ",
+      "birth_day": "1960/08/20",
+      "gender": 0,
+      "wins": 4,
+      "expiration": "2021/11/20"
+    },
+    {
+      "id": 17,
+      "prefecture_id": 34,
+      "name": "湯﨑 英彦",
+      "kana": "ゆざき ひでひこ",
+      "birth_day": "1965/10/04",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2021/11/28"
+    },
+    {
+      "id": 18,
+      "prefecture_id": 35,
+      "name": "村岡 嗣政",
+      "kana": "むらおか つぐまさ",
+      "birth_day": "1972/12/07",
+      "gender": 0,
+      "wins": 2,
+      "expiration": "2022/02/22"
+    },
+    {
+      "id": 19,
+      "prefecture_id": 42,
+      "name": "中村 法道",
+      "kana": "なかむら ほうどう",
+      "birth_day": "1950/11/29",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2022/03/01"
+    },
+    {
+      "id": 20,
+      "prefecture_id": 17,
+      "name": "谷本 正憲",
+      "kana": "たにもと まさのり",
+      "birth_day": "1945/04/16",
+      "gender": 0,
+      "wins": 7,
+      "expiration": "2022/03/26"
+    },
+    {
+      "id": 21,
+      "prefecture_id": 26,
+      "name": "西脇 隆俊",
+      "kana": "にしわき たかとし",
+      "birth_day": "1955/07/16",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2022/04/15"
+    },
+    {
+      "id": 22,
+      "prefecture_id": 15,
+      "name": "花角 英世",
+      "kana": "はなずみ ひでよ",
+      "birth_day": "1958/05/22",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2022/06/09"
+    },
+    {
+      "id": 23,
+      "prefecture_id": 25,
+      "name": "三日月 大造",
+      "kana": "みかづき たいぞう",
+      "birth_day": "1971/05/24",
+      "gender": 0,
+      "wins": 2,
+      "expiration": "2022/07/19"
+    },
+    {
+      "id": 24,
+      "prefecture_id": 20,
+      "name": "阿部 守一",
+      "kana": "あべ しゅいち",
+      "birth_day": "1960/12/21",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2022/08/31"
+    },
+    {
+      "id": 25,
+      "prefecture_id": 37,
+      "name": "浜田 恵造",
+      "kana": "はまだ けいぞう",
+      "birth_day": "1952/01/10",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2022/09/04"
+    },
+    {
+      "id": 26,
+      "prefecture_id": 47,
+      "name": "玉城 デニー",
+      "kana": "たまき でにー",
+      "birth_day": "1959/10/13",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2022/09/29"
+    },
+    {
+      "id": 27,
+      "prefecture_id": 7,
+      "name": "内堀 雅雄",
+      "kana": "うちぼり まさお",
+      "birth_day": "1964/03/26",
+      "gender": 0,
+      "wins": 2,
+      "expiration": "2022/11/11"
+    },
+    {
+      "id": 28,
+      "prefecture_id": 38,
+      "name": "中村 時広",
+      "kana": "なかむら ときひろ",
+      "birth_day": "1960/01/25",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2022/11/30"
+    },
+    {
+      "id": 29,
+      "prefecture_id": 30,
+      "name": "仁坂 吉伸",
+      "kana": "にさか よしのぶ",
+      "birth_day": "1950/10/02",
+      "gender": 0,
+      "wins": 4,
+      "expiration": "2022/12/16"
+    },
+    {
+      "id": 30,
+      "prefecture_id": 41,
+      "name": "山口 祥義",
+      "kana": "やまぐち よしのり",
+      "birth_day": "1965/07/01",
+      "gender": 0,
+      "wins": 2,
+      "expiration": "2023/01/10"
+    },
+    {
+      "id": 31,
+      "prefecture_id": 45,
+      "name": "河野 俊嗣",
+      "kana": "こうの しゅんじ",
+      "birth_day": "1964/09/08",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2023/01/20"
+    },
+    {
+      "id": 32,
+      "prefecture_id": 23,
+      "name": "大村 秀章",
+      "kana": "おおむら ひであき",
+      "birth_day": "1960/03/09",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2023/02/14"
+    },
+    {
+      "id": 33,
+      "prefecture_id": 19,
+      "name": "長崎 幸太郎",
+      "kana": "ながさき こうたろう",
+      "birth_day": "1968/08/18",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2023/02/16"
+    },
+    {
+      "id": 34,
+      "prefecture_id": 27,
+      "name": "吉村 洋文",
+      "kana": "よしむら ひろふみ",
+      "birth_day": "1975/06/17",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2023/04/06"
+    },
+    {
+      "id": 35,
+      "prefecture_id": 31,
+      "name": "平井 伸治",
+      "kana": "ひらい しんじ",
+      "birth_day": "1961/09/17",
+      "gender": 0,
+      "wins": 4,
+      "expiration": "2023/04/12"
+    },
+    {
+      "id": 36,
+      "prefecture_id": 24,
+      "name": "鈴木 英敬",
+      "kana": "すずき えいけい",
+      "birth_day": "1974/08/15",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2023/04/20"
+    },
+    {
+      "id": 37,
+      "prefecture_id": 40,
+      "name": "小川 洋",
+      "kana": "おがわ ひろし",
+      "birth_day": "1949/05/17",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2023/04/22"
+    },
+    {
+      "id": 38,
+      "prefecture_id": 14,
+      "name": "黒岩 祐治",
+      "kana": "くろいわ ゆうじ",
+      "birth_day": "1954/09/26",
+      "gender": 0,
+      "wins": 3,
+      "expiration": "2023/04/22"
+    },
+    {
+      "id": 39,
+      "prefecture_id": 18,
+      "name": "杉本 達治",
+      "kana": "すぎもと たつじ",
+      "birth_day": "1962/07/31",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2023/04/22"
+    },
+    {
+      "id": 40,
+      "prefecture_id": 1,
+      "name": "鈴木 直道",
+      "kana": "すずき なおみち",
+      "birth_day": "1981/03/14",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2023/04/22"
+    },
+    {
+      "id": 41,
+      "prefecture_id": 44,
+      "name": "広瀬 勝貞",
+      "kana": "ひろせ かつさだ",
+      "birth_day": "1942/06/25",
+      "gender": 0,
+      "wins": 5,
+      "expiration": "2023/04/27"
+    },
+    {
+      "id": 42,
+      "prefecture_id": 32,
+      "name": "丸山 達也",
+      "kana": "まるやま たつや",
+      "birth_day": "1970/03/25",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2023/04/29"
+    },
+    {
+      "id": 43,
+      "prefecture_id": 29,
+      "name": "荒井 正吾",
+      "kana": "あらい しょうご",
+      "birth_day": "1945/01/18",
+      "gender": 0,
+      "wins": 4,
+      "expiration": "2023/05/02"
+    },
+    {
+      "id": 44,
+      "prefecture_id": 36,
+      "name": "飯泉 嘉門",
+      "kana": "いいずみ かもん",
+      "birth_day": "1960/07/29",
+      "gender": 0,
+      "wins": 5,
+      "expiration": "2023/05/17"
+    },
+    {
+      "id": 45,
+      "prefecture_id": 2,
+      "name": "三村 申吾",
+      "kana": "みむら しんご",
+      "birth_day": "1956/04/16",
+      "gender": 0,
+      "wins": 5,
+      "expiration": "2023/06/28"
+    },
+    {
+      "id": 46,
+      "prefecture_id": 10,
+      "name": "山本 一太",
+      "kana": "やまもと いちた",
+      "birth_day": "1958/01/24",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2023/07/27"
+    },
+    {
+      "id": 47,
+      "prefecture_id": 11,
+      "name": "大野 元裕",
+      "kana": "おおの もとひろ",
+      "birth_day": "1963/11/12",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2023/08/30"
+    },
+    {
+      "id": 48,
+      "prefecture_id": 3,
+      "name": "達増 拓也",
+      "kana": "たっそ たくや",
+      "birth_day": "1964/06/10",
+      "gender": 0,
+      "wins": 4,
+      "expiration": "2023/09/10"
+    },
+    {
+      "id": 49,
+      "prefecture_id": 39,
+      "name": "濵田 省司",
+      "kana": "はまだ せいじ",
+      "birth_day": "1963/01/23",
+      "gender": 0,
+      "wins": 1,
+      "expiration": "2023/12/06"
+    },
+    {
+      "id": 50,
+      "prefecture_id": 43,
+      "name": "蒲島 郁夫",
+      "kana": "かばしま いくお",
+      "birth_day": "1947/01/28",
+      "gender": 0,
+      "wins": 4,
+      "expiration": "2024/04/15"
+    },
+    {
+      "id": 51,
+      "prefecture_id": 13,
+      "name": "小池 百合子",
+      "kana": "こいけ ゆりこ",
+      "birth_day": "1952/07/15",
+      "gender": 1,
+      "wins": 2,
+      "expiration": "2024/07/30"
+    }
+  ]
+}

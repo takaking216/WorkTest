@@ -1,0 +1,145 @@
+package com.example.worktest
+
+import android.content.Intent
+import android.net.Uri
+import android.os.Bundle
+import android.view.View
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.google.gson.Gson
+import java.io.BufferedReader
+import java.io.IOException
+import java.io.InputStreamReader
+
+class DetailActivity : AppCompatActivity() {
+    var j: Japan? = null
+    lateinit var ps: List<Population>
+    var id = 0
+    public override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_detail)
+        id = intent.getIntExtra("id", 0)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        jsonData
+        setData()
+    }
+
+    val jsonData: Unit
+        get() {
+            val d = readJson("japan.json")
+            j = Gson().fromJson(d, Japan::class.java)
+        }
+
+    fun readJson(fileName: String?): String? {
+        val am = resources.assets
+        try {
+            val `is` = am.open(fileName!!)
+            val br = BufferedReader(InputStreamReader(`is`))
+            var l: String?
+            val sb = StringBuilder()
+            while (br.readLine().also { l = it } != null) {
+                sb.append(l)
+            }
+            return sb.toString()
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+        return null
+    }
+
+    fun setData() {
+        var cTdfk: Tdfk? = null
+    for (tdfk in j!!.prefectures!!) {
+            if (tdfk.id == id) {
+                cTdfk = tdfk
+                break
+            }
+        }
+        if (cTdfk != null) {
+            val chihou = findViewById<View>(R.id.chihou) as TextView
+            for (r in j!!.regions!!) {
+                if (r.id == cTdfk.region_id) {
+                    chihou.text = r.name
+                }
+            }
+            chihou.setOnLongClickListener {
+                Toast.makeText(applicationContext, chihou.text, Toast.LENGTH_SHORT).show()
+                false
+            }
+            val tdfkName = findViewById<View>(R.id.tdfk) as TextView
+            tdfkName.text = cTdfk.name
+            title = cTdfk.name
+            val kenchoshozaichi = findViewById<View>(R.id.kenchoshozaichi) as TextView
+            kenchoshozaichi.text = cTdfk.capital!!.name
+            val toshiType = findViewById<View>(R.id.toshitype) as TextView
+            if (cTdfk.capital!!.city_type == 4) {
+                toshiType.text = "（特別区）"
+            } else if (cTdfk.capital!!.city_type == 3) {
+                toshiType.text = "（政令指定都市）"
+            } else if (cTdfk.capital!!.city_type == 2) {
+                toshiType.text = "（施工時特例市）"
+            } else if (cTdfk.capital!!.city_type == 1) {
+                toshiType.text = "（中核都市）"
+            } else {
+                toshiType.text = "（−）"
+            }
+            val zip = findViewById<View>(R.id.yuubinbangou) as TextView
+            zip.text = "〒" + cTdfk.capital!!.zip_code
+            val add = findViewById<View>(R.id.juusho) as TextView
+            val address = cTdfk.capital!!.address
+            add.text = address
+            val map = findViewById<View>(R.id.openmap)
+            map.setOnClickListener {
+                val uri = Uri.parse("geo:0,0?q=$address")
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                startActivity(intent)
+            }
+            val menseki = findViewById<View>(R.id.menseki) as TextView
+            menseki.text = cTdfk.area.toString() + "㎢"
+            val jinkoumitsudo = findViewById<View>(R.id.jinkoumitsudo) as TextView
+            jinkoumitsudo.text = getMitsudo(cTdfk.id, cTdfk.area).toString() + "人"
+            val hana = findViewById<View>(R.id.hana) as TextView
+            var f: String? = ""
+            if (cTdfk.flowers != null) {
+                for (flower in cTdfk.flowers!!) {
+                    if (f!!.isNotEmpty()) {
+                        f += "\n"
+                    }
+                    f += flower
+                }
+                hana.text = f
+            }
+            val ki = findViewById<View>(R.id.ki) as TextView
+            var k: String? = ""
+            for (tree in cTdfk.trees) {
+                if (k!!.isNotEmpty()) {
+                    k += "\n"
+                }
+                k += tree
+            }
+            ki.text = k
+        } else {
+            finish()
+        }
+    }
+
+    fun getMitsudo(id: Int, area: Float): Float {
+        populationData
+        for (p in ps) {
+            if (p.prefecture_id == id) {
+                return p.value / area
+            }
+        }
+        return 0F
+    }
+
+    val populationData: Unit
+        get() {
+            val d = readJson("population.json")
+            ps = Gson().fromJson(d, Array<Population>::class.java).toList()
+        }
+}

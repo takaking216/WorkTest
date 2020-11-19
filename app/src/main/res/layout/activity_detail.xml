@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地方名"
+        android:textColor="#646464"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/chihou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="北海道地方"
+        android:textColor="#242424"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#646464" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="都道府県名"
+        android:textColor="#646464"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tdfk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="北海道"
+        android:textColor="#242424"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#646464" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="県庁所在地"
+        android:textColor="#646464"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/kenchoshozaichi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="札幌市"
+            android:textColor="#242424"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/toshitype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（都市タイプ）"
+            android:textColor="#242424"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#646464" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="郵便番号"
+        android:textColor="#646464"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/yuubinbangou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xxx-xxxx"
+        android:textColor="#242424"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#646464" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="住所"
+        android:textColor="#646464"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/juusho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="xxxxxxxx"
+            android:textColor="#242424"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/openmap"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/baseline_place_black_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#646464" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="面積"
+        android:textColor="#646464"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/menseki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1000㎢"
+        android:textColor="#242424"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#646464" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人口密度"
+        android:textColor="#646464"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/jinkoumitsudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3人"
+        android:textColor="#242424"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#646464" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="都道府県の花"
+        android:textColor="#646464"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/hana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="花の名前１\n花の名前２"
+        android:textColor="#242424"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#646464" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="都道府県の木"
+        android:textColor="#646464"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/ki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="木の名前１\n木の名前２"
+        android:textColor="#242424"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#646464" />
+
+</LinearLayout>
