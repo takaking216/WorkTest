@@ -77,15 +77,32 @@ class DetailActivity : AppCompatActivity() {
                     chihou.text = r.name
                 }
             }
+
+            //            ロングタップ処理
             chihou.setOnLongClickListener {
                 Toast.makeText(applicationContext, chihou.text, Toast.LENGTH_SHORT).show()
                 false
             }
+
             val tdfkName = findViewById<View>(R.id.tdfk) as TextView
             tdfkName.text = cTdfk.name
             title = cTdfk.name
+
+            //            ロングタップ処理
+            tdfkName.setOnLongClickListener {
+                Toast.makeText(applicationContext, tdfkName.text, Toast.LENGTH_SHORT).show()
+                false
+            }
+
             val kenchoshozaichi = findViewById<View>(R.id.kenchoshozaichi) as TextView
             kenchoshozaichi.text = cTdfk.capital!!.name
+
+            //            ロングタップ処理
+            kenchoshozaichi.setOnLongClickListener {
+                Toast.makeText(applicationContext, kenchoshozaichi.text, Toast.LENGTH_SHORT).show()
+                false
+            }
+
             val toshiType = findViewById<View>(R.id.toshitype) as TextView
             if (cTdfk.capital!!.city_type == 4) {
                 toshiType.text = "（特別区）"
@@ -98,21 +115,57 @@ class DetailActivity : AppCompatActivity() {
             } else {
                 toshiType.text = "（−）"
             }
+
+            //            ロングタップ処理
+            toshiType.setOnLongClickListener {
+                Toast.makeText(applicationContext, toshiType.text, Toast.LENGTH_SHORT).show()
+                false
+            }
+
             val zip = findViewById<View>(R.id.yuubinbangou) as TextView
             zip.text = "〒" + cTdfk.capital!!.zip_code
+
+            //            ロングタップ処理
+            zip.setOnLongClickListener {
+                Toast.makeText(applicationContext, zip.text, Toast.LENGTH_SHORT).show()
+                false
+            }
+
             val add = findViewById<View>(R.id.juusho) as TextView
             val address = cTdfk.capital!!.address
             add.text = address
+
+            //            ロングタップ処理
+            add.setOnLongClickListener {
+                Toast.makeText(applicationContext, add.text, Toast.LENGTH_SHORT).show()
+                false
+            }
+
             val map = findViewById<View>(R.id.openmap)
             map.setOnClickListener {
                 val uri = Uri.parse("geo:0,0?q=$address")
                 val intent = Intent(Intent.ACTION_VIEW, uri)
                 startActivity(intent)
             }
+
             val menseki = findViewById<View>(R.id.menseki) as TextView
             menseki.text = cTdfk.area.toString() + "㎢"
+
+            //            ロングタップ処理
+            menseki.setOnLongClickListener {
+                Toast.makeText(applicationContext, menseki.text, Toast.LENGTH_SHORT).show()
+                false
+            }
+
             val jinkoumitsudo = findViewById<View>(R.id.jinkoumitsudo) as TextView
             jinkoumitsudo.text = getMitsudo(cTdfk.id, cTdfk.area).toString() + "人"
+
+            //            ロングタップ処理
+            jinkoumitsudo.setOnLongClickListener {
+                Toast.makeText(applicationContext, jinkoumitsudo.text, Toast.LENGTH_SHORT).show()
+                false
+            }
+
             val hana = findViewById<View>(R.id.hana) as TextView
             var f: String? = ""
             if (cTdfk.flowers != null) {
@@ -124,6 +177,13 @@ class DetailActivity : AppCompatActivity() {
                 }
                 hana.text = f
             }
+
+            //            ロングタップ処理
+            hana.setOnLongClickListener {
+                Toast.makeText(applicationContext, hana.text, Toast.LENGTH_SHORT).show()
+                false
+            }
+
             val ki = findViewById<View>(R.id.ki) as TextView
             var k: String? = ""
             for (tree in cTdfk.trees) {
@@ -133,6 +193,12 @@ class DetailActivity : AppCompatActivity() {
                 k += tree
             }
             ki.text = k
+
+            //            ロングタップ処理
+            ki.setOnLongClickListener {
+                Toast.makeText(applicationContext, ki.text, Toast.LENGTH_SHORT).show()
+                false
+            }
         } else {
             finish()
         }
