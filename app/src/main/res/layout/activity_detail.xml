@@ -17,7 +17,9 @@
         android:layout_height="wrap_content"
         android:text="北海道地方"
         android:textColor="#242424"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"/>
 
     <View
         android:layout_width="match_parent"
@@ -37,7 +39,9 @@
         android:layout_height="wrap_content"
         android:text="北海道"
         android:textColor="#242424"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"/>
 
     <View
         android:layout_width="match_parent"
@@ -54,7 +58,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground">
 
         <TextView
             android:id="@+id/kenchoshozaichi"
@@ -92,7 +98,9 @@
         android:layout_height="wrap_content"
         android:text="xxx-xxxx"
         android:textColor="#242424"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"/>
 
     <View
         android:layout_width="match_parent"
@@ -118,7 +126,9 @@
             android:layout_weight="1"
             android:text="xxxxxxxx"
             android:textColor="#242424"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"/>
 
         <View
             android:id="@+id/openmap"
@@ -145,7 +155,9 @@
         android:layout_height="wrap_content"
         android:text="1000㎢"
         android:textColor="#242424"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"/>
 
     <View
         android:layout_width="match_parent"
@@ -165,7 +177,9 @@
         android:layout_height="wrap_content"
         android:text="3人"
         android:textColor="#242424"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"/>
 
     <View
         android:layout_width="match_parent"
@@ -185,7 +199,9 @@
         android:layout_height="wrap_content"
         android:text="花の名前１\n花の名前２"
         android:textColor="#242424"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"/>
 
     <View
         android:layout_width="match_parent"
@@ -205,7 +221,9 @@
         android:layout_height="wrap_content"
         android:text="木の名前１\n木の名前２"
         android:textColor="#242424"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"/>
 
     <View
         android:layout_width="match_parent"
