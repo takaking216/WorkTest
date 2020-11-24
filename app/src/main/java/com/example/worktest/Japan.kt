@@ -16,6 +16,7 @@ data class Tdfk (
     var capital: Kenchoshozaichi? = null,
     var region_id: Int = 0,
     var area: Float = 0F,
+    var jinkoumitudo: Int = 0,
     var flowers: List<String> = emptyList(),
     var trees: List<String> = emptyList()
 )

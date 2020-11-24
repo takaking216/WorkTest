@@ -12,7 +12,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
-import org.w3c.dom.Text
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader

@@ -48,6 +48,11 @@ class MainActivity : AppCompatActivity() {
                 Collections.sort(j!!.prefectures, AreaComparator())
                 a!!.notifyDataSetChanged()
             }
+
+            R.id.jinkou_desc -> {
+                Collections.sort(j!!.prefectures, JinkouComparator())
+                a!!.notifyDataSetChanged()
+            }
         }
         return super.onOptionsItemSelected(item)
     }
