@@ -29,6 +29,9 @@ class TdfkAdapter(var context: Context, var cList: List<Chihou?>?, var tList: Li
             intent.putExtra("id", t.id)
             context.startActivity(intent)
         }
+        holder.itemView.setOnLongClickListener {
+            return@setOnLongClickListener true
+        }
     }
 
     fun getChihoumei(region_id: Int): String? {
