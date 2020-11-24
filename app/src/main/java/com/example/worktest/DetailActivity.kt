@@ -1,5 +1,8 @@
 package com.example.worktest
 
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -9,9 +12,11 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
+import org.w3c.dom.Text
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
+
 
 class DetailActivity : AppCompatActivity() {
     var j: Japan? = null
@@ -26,7 +31,7 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when(item?.itemId){
-            android.R.id.home->{
+            android.R.id.home -> {
                 finish()
             }
         }
@@ -63,6 +68,7 @@ class DetailActivity : AppCompatActivity() {
     }
 
     fun setData() {
+        var clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         var cTdfk: Tdfk? = null
     for (tdfk in j!!.prefectures!!) {
             if (tdfk.id == id) {
@@ -80,7 +86,9 @@ class DetailActivity : AppCompatActivity() {
 
             //            ロングタップ処理
             chihou.setOnLongClickListener {
-                Toast.makeText(applicationContext, chihou.text, Toast.LENGTH_SHORT).show()
+                var clip = ClipData.newPlainText("", chihou.text)
+                clipboard!!.setPrimaryClip(clip)
+                Toast.makeText(applicationContext,"${chihou.text}: をコピーしました", Toast.LENGTH_SHORT).show()
                 false
             }
 
@@ -90,18 +98,14 @@ class DetailActivity : AppCompatActivity() {
 
             //            ロングタップ処理
             tdfkName.setOnLongClickListener {
-                Toast.makeText(applicationContext, tdfkName.text, Toast.LENGTH_SHORT).show()
+                var clip = ClipData.newPlainText("", tdfkName.text)
+                clipboard!!.setPrimaryClip(clip)
+                Toast.makeText(applicationContext,"${tdfkName.text}: をコピーしました", Toast.LENGTH_SHORT).show()
                 false
             }
 
             val kenchoshozaichi = findViewById<View>(R.id.kenchoshozaichi) as TextView
             kenchoshozaichi.text = cTdfk.capital!!.name
-
-            //            ロングタップ処理
-            kenchoshozaichi.setOnLongClickListener {
-                Toast.makeText(applicationContext, kenchoshozaichi.text, Toast.LENGTH_SHORT).show()
-                false
-            }
 
             val toshiType = findViewById<View>(R.id.toshitype) as TextView
             if (cTdfk.capital!!.city_type == 4) {
@@ -116,18 +120,24 @@ class DetailActivity : AppCompatActivity() {
                 toshiType.text = "（−）"
             }
 
+            val kenchoField = findViewById<View>(R.id.kenchofield)
             //            ロングタップ処理
-            toshiType.setOnLongClickListener {
-                Toast.makeText(applicationContext, toshiType.text, Toast.LENGTH_SHORT).show()
+            kenchoField.setOnLongClickListener {
+                var clip = ClipData.newPlainText("", (kenchoshozaichi.text as String?)?.plus(toshiType.text))
+                clipboard!!.setPrimaryClip(clip)
+                Toast.makeText(applicationContext,"${(kenchoshozaichi.text as String?)?.plus(toshiType.text)}: をコピーしました", Toast.LENGTH_SHORT).show()
                 false
             }
+
 
             val zip = findViewById<View>(R.id.yuubinbangou) as TextView
             zip.text = "〒" + cTdfk.capital!!.zip_code
 
             //            ロングタップ処理
             zip.setOnLongClickListener {
-                Toast.makeText(applicationContext, zip.text, Toast.LENGTH_SHORT).show()
+                var clip = ClipData.newPlainText("", zip.text)
+                clipboard!!.setPrimaryClip(clip)
+                Toast.makeText(applicationContext,"${zip.text}: をコピーしました", Toast.LENGTH_SHORT).show()
                 false
             }
 
@@ -137,7 +147,9 @@ class DetailActivity : AppCompatActivity() {
 
             //            ロングタップ処理
             add.setOnLongClickListener {
-                Toast.makeText(applicationContext, add.text, Toast.LENGTH_SHORT).show()
+                var clip = ClipData.newPlainText("", add.text)
+                clipboard!!.setPrimaryClip(clip)
+                Toast.makeText(applicationContext,"${add.text}: をコピーしました", Toast.LENGTH_SHORT).show()
                 false
             }
 
@@ -153,7 +165,9 @@ class DetailActivity : AppCompatActivity() {
 
             //            ロングタップ処理
             menseki.setOnLongClickListener {
-                Toast.makeText(applicationContext, menseki.text, Toast.LENGTH_SHORT).show()
+                var clip = ClipData.newPlainText("", menseki.text)
+                clipboard!!.setPrimaryClip(clip)
+                Toast.makeText(applicationContext,"${menseki.text}: をコピーしました", Toast.LENGTH_SHORT).show()
                 false
             }
 
@@ -162,7 +176,9 @@ class DetailActivity : AppCompatActivity() {
 
             //            ロングタップ処理
             jinkoumitsudo.setOnLongClickListener {
-                Toast.makeText(applicationContext, jinkoumitsudo.text, Toast.LENGTH_SHORT).show()
+                var clip = ClipData.newPlainText("", jinkoumitsudo.text)
+                clipboard!!.setPrimaryClip(clip)
+                Toast.makeText(applicationContext,"${jinkoumitsudo.text}: をコピーしました", Toast.LENGTH_SHORT).show()
                 false
             }
 
@@ -180,7 +196,9 @@ class DetailActivity : AppCompatActivity() {
 
             //            ロングタップ処理
             hana.setOnLongClickListener {
-                Toast.makeText(applicationContext, hana.text, Toast.LENGTH_SHORT).show()
+                var clip = ClipData.newPlainText("", hana.text)
+                clipboard!!.setPrimaryClip(clip)
+                Toast.makeText(applicationContext,"${hana.text}: をコピーしました", Toast.LENGTH_SHORT).show()
                 false
             }
 
@@ -196,7 +214,9 @@ class DetailActivity : AppCompatActivity() {
 
             //            ロングタップ処理
             ki.setOnLongClickListener {
-                Toast.makeText(applicationContext, ki.text, Toast.LENGTH_SHORT).show()
+                var clip = ClipData.newPlainText("", ki.text)
+                clipboard!!.setPrimaryClip(clip)
+                Toast.makeText(applicationContext,"${ki.text}: をコピーしました", Toast.LENGTH_SHORT).show()
                 false
             }
         } else {
