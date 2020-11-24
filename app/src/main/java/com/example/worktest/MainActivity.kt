@@ -38,6 +38,12 @@ class MainActivity : AppCompatActivity() {
                 Collections.sort(j!!.prefectures, IdComparator())
                 a!!.notifyDataSetChanged()
             }
+
+            R.id.id_desc -> {
+                Collections.sort(j!!.prefectures, IdComparatorDesc())
+                a!!.notifyDataSetChanged()
+            }
+
             R.id.area_desc -> {
                 Collections.sort(j!!.prefectures, AreaComparator())
                 a!!.notifyDataSetChanged()

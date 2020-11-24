@@ -3,6 +3,12 @@
         android:id="@+id/id_ask"
         android:title="ID順(昇順)" />
     <item
+        android:id="@+id/id_desc"
+        android:title="ID順(降順)" />
+    <item
         android:id="@+id/area_desc"
         android:title="面積順(降順)" />
+    <item
+        android:id="@+id/jinkou_desc"
+        android:title="人口密度順(降順)" />
 </menu>
